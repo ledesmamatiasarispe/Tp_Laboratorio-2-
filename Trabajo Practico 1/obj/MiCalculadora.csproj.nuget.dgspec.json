@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {}
+    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\MiCalculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\Trabajo Practico 1.csproj": {
+    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\MiCalculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
-        "projectName": "Trabajo Practico 1",
-        "projectPath": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\Trabajo Practico 1.csproj",
+        "projectUniqueName": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\MiCalculadora.csproj",
+        "projectName": "MiCalculadora",
+        "projectPath": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\MiCalculadora.csproj",
         "packagesPath": "C:\\Users\\arisp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\obj\\",
         "projectStyle": "PackageReference",
