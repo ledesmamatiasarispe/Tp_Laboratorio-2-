@@ -10,11 +10,19 @@
 
         private static string ValidarOperador(char operador)
         {
-            if (operador != '+' || operador != '-' || operador != '*' || operador != '/')
+            string respuesta = "";
+            if (operador == '+' || operador == '-' || operador == '*' || operador == '/')
             {
-                return "+";
+                respuesta = operador.ToString();
+                
             }
-            return operador.ToString();
+            else 
+            {
+                respuesta = "+";
+
+            }
+
+            return respuesta;
         }
     }
 }
