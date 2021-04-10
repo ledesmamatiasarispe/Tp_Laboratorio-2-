@@ -34,5 +34,25 @@ namespace Trabajo_Practico_1
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
