@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiCalculadora", "MiCalculadora.csproj", "{E4848553-86FE-4FBE-AE3D-164212621946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entidades", "..\entidades\entidades.csproj", "{A5DA3AAB-739F-4819-BAC8-039DF855E3C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "entidades", "..\entidades\entidades.csproj", "{A5DA3AAB-739F-4819-BAC8-039DF855E3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "..\tests\tests.csproj", "{BB685638-5DF1-4A0E-BC9E-2D8295A594D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A5DA3AAB-739F-4819-BAC8-039DF855E3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5DA3AAB-739F-4819-BAC8-039DF855E3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5DA3AAB-739F-4819-BAC8-039DF855E3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB685638-5DF1-4A0E-BC9E-2D8295A594D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB685638-5DF1-4A0E-BC9E-2D8295A594D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB685638-5DF1-4A0E-BC9E-2D8295A594D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB685638-5DF1-4A0E-BC9E-2D8295A594D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
