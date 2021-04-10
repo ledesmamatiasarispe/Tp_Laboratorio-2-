@@ -21,10 +21,25 @@ namespace Trabajo_Practico_1
         public string setNumero
         {
             set
-            { 
-                if(value.GetType() == Type.GetType("System.String"))
-                numero = ValidarNumero(value);
+            {
+                if (value.GetType() == Type.GetType("System.String"))
+                    numero = ValidarNumero(value);
             }
+        }
+
+        private bool EsBinario(string cadena)
+        {
+            bool esBinario = true;
+
+            foreach (char numero in cadena)
+            {
+                if (numero != '0' || numero != '1')
+                {
+                    esBinario = false;
+                    break;
+                }
+            }
+            return esBinario;
         }
     }
 }
