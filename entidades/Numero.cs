@@ -9,9 +9,18 @@ namespace Trabajo_Practico_1
         /// <summary>
         /// El constructor por defecto (sin parámetros) asignará valor 0 al atributo numero.
         /// </summary>
-        public Numero()
+        public Numero() : this(0)
         {
-            numero = 0;
+            this.numero = 0;
+        }
+
+        public Numero(double numero) 
+        {
+            this.numero = numero;
+        }
+        public Numero(string numero)
+        {
+              double.TryParse(numero,out this.numero) ;
         }
 
         /// <summary>
@@ -130,6 +139,33 @@ namespace Trabajo_Practico_1
         public static string DecimalBinario(double numero)
         {
             return ConvertirBase((long)numero, 10, 2).ToString();
+        }
+
+        public static double operator -(Numero numero1, Numero numero2)
+        {
+            return numero1.numero - numero2.numero;
+        }
+
+        public static double operator +(Numero numero1, Numero numero2)
+        {
+            return numero1.numero + numero2.numero;
+        }
+
+        public static double operator /(Numero numero1, Numero numero2)
+        {
+            double resultado = double.MinValue;
+
+            if (numero2.numero != 0)
+            {
+                resultado = numero1.numero / numero2.numero;
+            }
+
+            return resultado;
+        }
+
+        public static double operator *(Numero numero1, Numero numero2)
+        {
+            return numero1.numero * numero2.numero;
         }
     }
 }
