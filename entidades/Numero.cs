@@ -44,7 +44,6 @@ namespace Trabajo_Practico_1
         private static bool EsBinario(string cadena)
         {
             bool esBinario = true;
-
             foreach (char numero in cadena)
             {
                 if (numero < '0' || numero > '1')
@@ -68,7 +67,6 @@ namespace Trabajo_Practico_1
         {
             long resultado = 0;
             long digito = 0;
-
             for (int potenciaDePosicion = 0; numero > 0; potenciaDePosicion++)
             {
                 digito = numero % BaseDestino;
@@ -88,9 +86,17 @@ namespace Trabajo_Practico_1
         public static string BinarioDecimal(string numeroBinario)
         {
             string respuesta = "valor inválido";
-            if (Numero.EsBinario(numeroBinario))
+            if (numeroBinario != null && numeroBinario != "")
             {
-                respuesta = ConvertirBase(long.Parse(numeroBinario), 2, 10).ToString();
+                Console.WriteLine(numeroBinario);
+                if (Numero.EsBinario(numeroBinario))
+                {
+                    long numeroParseado;
+                    if (long.TryParse(numeroBinario, out numeroParseado))
+                    {
+                        respuesta = ConvertirBase(numeroParseado, 2, 10).ToString();
+                    }
+                }
             }
             return respuesta;
         }
@@ -102,18 +108,19 @@ namespace Trabajo_Practico_1
         /// </summary>
         /// <param name="numero"></param>
         /// <returns></returns>
-        public static string DecimalBinario(string numero) 
+        public static string DecimalBinario(string numero)
         {
             string respuesta = "valor inválido";
+
             double numeroParseado;
+
             if (double.TryParse(numero, out numeroParseado))
             {
                 respuesta = DecimalBinario(numeroParseado);
             }
+
             return respuesta;
-            
         }
-        
 
         /// <summary>
         ///
