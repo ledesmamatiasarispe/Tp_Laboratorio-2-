@@ -1,6 +1,6 @@
 ﻿using Trabajo_Practico_1;
 
-namespace entidades
+namespace Trabajo_Practico_1
 {
     public static class Calculadora
     {
