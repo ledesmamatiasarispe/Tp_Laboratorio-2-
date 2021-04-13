@@ -29,143 +29,138 @@ namespace Trabajo_Practico_1
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.resultado = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtNumero1 = new System.Windows.Forms.TextBox();
+            this.txtNumero2 = new System.Windows.Forms.TextBox();
+            this.cmbOperador = new System.Windows.Forms.ComboBox();
+            this.btnOperar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnConvertirADecimal = new System.Windows.Forms.Button();
+            this.btnConvertirABinario = new System.Windows.Forms.Button();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(12, 49);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 34);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "1";
-            this.textBox1.WordWrap = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // resultado
-            // 
-            this.resultado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.resultado.BackColor = System.Drawing.SystemColors.Menu;
-            this.resultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.resultado.Cursor = System.Windows.Forms.Cursors.Default;
-            this.resultado.Enabled = false;
-            this.resultado.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resultado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.resultado.Location = new System.Drawing.Point(12, 6);
-            this.resultado.Name = "resultado";
-            this.resultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.resultado.Size = new System.Drawing.Size(310, 39);
-            this.resultado.TabIndex = 1;
-            this.resultado.Text = "1";
-            this.resultado.WordWrap = false;
-            this.resultado.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtNumero1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtNumero1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumero1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNumero1.Location = new System.Drawing.Point(12, 49);
+            this.txtNumero1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.txtNumero1.Name = "textBox1";
+            this.txtNumero1.Size = new System.Drawing.Size(100, 34);
+            this.txtNumero1.TabIndex = 2;
+            this.txtNumero1.Text = "1";
+            this.txtNumero1.WordWrap = false;
+            this.txtNumero1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(222, 49);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 34);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "0";
-            this.textBox3.WordWrap = false;
+            this.txtNumero2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtNumero2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumero2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNumero2.Location = new System.Drawing.Point(222, 49);
+            this.txtNumero2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.txtNumero2.Name = "textBox3";
+            this.txtNumero2.Size = new System.Drawing.Size(100, 34);
+            this.txtNumero2.TabIndex = 4;
+            this.txtNumero2.Text = "0";
+            this.txtNumero2.WordWrap = false;
             // 
             // comboBox1
             // 
-            this.comboBox1.DisplayMember = "0";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.Black;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbOperador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbOperador.DisplayMember = "0";
+            this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbOperador.ForeColor = System.Drawing.Color.Black;
+            this.cmbOperador.FormattingEnabled = true;
+            this.cmbOperador.Items.AddRange(new object[] {
             "+",
             "-",
             "*",
             "/"});
-            this.comboBox1.Location = new System.Drawing.Point(122, 49);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.comboBox1.MaxDropDownItems = 3;
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(90, 33);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.ValueMember = "0";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbOperador.Location = new System.Drawing.Point(122, 49);
+            this.cmbOperador.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.cmbOperador.MaxDropDownItems = 3;
+            this.cmbOperador.Name = "comboBox1";
+            this.cmbOperador.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbOperador.Size = new System.Drawing.Size(90, 33);
+            this.cmbOperador.TabIndex = 3;
+            this.cmbOperador.ValueMember = "0";
+            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(12, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Operar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOperar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnOperar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnOperar.Location = new System.Drawing.Point(12, 91);
+            this.btnOperar.Name = "button1";
+            this.btnOperar.Size = new System.Drawing.Size(100, 33);
+            this.btnOperar.TabIndex = 5;
+            this.btnOperar.Text = "Operar";
+            this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(117, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 33);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnLimpiar.Location = new System.Drawing.Point(118, 91);
+            this.btnLimpiar.Name = "button2";
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 33);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Location = new System.Drawing.Point(222, 91);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 33);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Cerrar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCerrar.Location = new System.Drawing.Point(223, 91);
+            this.btnCerrar.Name = "button3";
+            this.btnCerrar.Size = new System.Drawing.Size(100, 33);
+            this.btnCerrar.TabIndex = 7;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Location = new System.Drawing.Point(167, 130);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(155, 33);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Convertir A Decimal";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnConvertirADecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConvertirADecimal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(168, 130);
+            this.btnConvertirADecimal.Name = "button4";
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(155, 33);
+            this.btnConvertirADecimal.TabIndex = 9;
+            this.btnConvertirADecimal.Text = "Convertir A Decimal";
+            this.btnConvertirADecimal.UseVisualStyleBackColor = true;
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.button5_Click);
             // 
             // button5
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(12, 130);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(155, 33);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Convertir A Binario";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnConvertirABinario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConvertirABinario.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConvertirABinario.Location = new System.Drawing.Point(12, 130);
+            this.btnConvertirABinario.Name = "button5";
+            this.btnConvertirABinario.Size = new System.Drawing.Size(155, 33);
+            this.btnConvertirABinario.TabIndex = 8;
+            this.btnConvertirABinario.Text = "Convertir A Binario";
+            this.btnConvertirABinario.UseVisualStyleBackColor = true;
+            this.btnConvertirABinario.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label1
+            // 
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.Location = new System.Drawing.Point(12, 6);
+            this.lblResultado.Name = "label1";
+            this.lblResultado.Size = new System.Drawing.Size(310, 39);
+            this.lblResultado.TabIndex = 10;
+            this.lblResultado.Text = "label1";
+            this.lblResultado.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -174,15 +169,15 @@ namespace Trabajo_Practico_1
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(338, 178);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.resultado);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.btnConvertirABinario);
+            this.Controls.Add(this.btnConvertirADecimal);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnOperar);
+            this.Controls.Add(this.cmbOperador);
+            this.Controls.Add(this.txtNumero2);
+            this.Controls.Add(this.txtNumero1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -199,16 +194,21 @@ namespace Trabajo_Practico_1
         }
 
         #endregion
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnConvertirABinario;
+        private System.Windows.Forms.Button btnConvertirADecimal;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnOperar;
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox resultado;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+
+        private System.Windows.Forms.TextBox txtNumero1;
+        private System.Windows.Forms.TextBox txtNumero2;
+
+        private System.Windows.Forms.ComboBox cmbOperador;
+       
+       
+        
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
