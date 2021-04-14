@@ -6,8 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\arisp\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\arisp\\.nuget\\packages"
+      "C:\\Users\\matias\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\matias\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

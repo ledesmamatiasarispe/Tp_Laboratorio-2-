@@ -20,7 +20,14 @@ namespace Trabajo_Practico_1
         }
         public Numero(string numero)
         {
-              double.TryParse(numero,out this.numero) ;
+            double numeroParseado;
+            if(  double.TryParse(numero,out numeroParseado) )
+            {
+                this.numero = numeroParseado;
+
+
+            }else { this.numero = 0; }
+            
         }
 
         /// <summary>

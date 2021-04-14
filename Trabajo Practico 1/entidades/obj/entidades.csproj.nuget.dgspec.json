@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj": {}
+    "C:\\Users\\matias\\Source\\Repos\\ledesmamatiasarispe\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj": {
+    "C:\\Users\\matias\\Source\\Repos\\ledesmamatiasarispe\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj",
+        "projectUniqueName": "C:\\Users\\matias\\Source\\Repos\\ledesmamatiasarispe\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj",
         "projectName": "entidades",
-        "projectPath": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj",
-        "packagesPath": "C:\\Users\\arisp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arisp\\source\\repos\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\obj\\",
+        "projectPath": "C:\\Users\\matias\\Source\\Repos\\ledesmamatiasarispe\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\entidades.csproj",
+        "packagesPath": "C:\\Users\\matias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matias\\Source\\Repos\\ledesmamatiasarispe\\Tp_Laboratorio-2-\\Trabajo Practico 1\\entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\arisp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

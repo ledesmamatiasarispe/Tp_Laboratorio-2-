@@ -2,71 +2,52 @@
 
 namespace Trabajo_Practico_1
 {
-    public partial class Form1 : Form
+    public partial  class  LaCalculadora : Form
     {
-      
-
-        public Form1()
+        public LaCalculadora()
         {
             InitializeComponent();
-        }
-
-        private void richTextBox1_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, System.EventArgs e)
-        {
-
+            this.cmbOperador.SelectedIndex = 0;
+            this.lblResultado.Text = "0";
         }
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
-
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void btnOperar_click(object sender, System.EventArgs e)
         {
-
+            this.lblResultado.Text = Calculadora.Operar(new Numero(this.txtNumero1.Text), new Numero(this.txtNumero2.Text), (string
+                )this.cmbOperador.SelectedItem).ToString();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
-        {   
-
-        }
-
-        private void button1_Click(object sender, System.EventArgs e)
+        private void limpiar()
         {
-            MessageBox.Show("boton1");
+            this.txtNumero1.Text = null;
+            this.txtNumero2.Text = null;
+            this.lblResultado.Text = null;
+            this.cmbOperador.SelectedItem = null;
+            this.cmbOperador.SelectedItem = null;
         }
 
-        private void button2_Click(object sender, System.EventArgs e)
+        private void btnLimpiar_click(object sender, System.EventArgs e)
         {
-            MessageBox.Show("boton2");
-        }
-        private void button3_Click(object sender, System.EventArgs e)
-        {
-            MessageBox.Show("boton3");
-        }
-        private void button4_Click(object sender, System.EventArgs e)
-        {
-            MessageBox.Show("boton4");
+            this.limpiar();
         }
 
-        private void button5_Click(object sender, System.EventArgs e)
+        private void btnCerrar_click(object sender, System.EventArgs e)
         {
-            MessageBox.Show("boton5");
+            Application.Exit();
         }
 
-        private void label1_Click(object sender, System.EventArgs e)
+        private void btnConvertirABinario_click(object sender, System.EventArgs e)
         {
+            this.lblResultado.Text = Numero.DecimalBinario(this.lblResultado.Text);
+        }
 
+        private void btnConvertirADecimal_Click(object sender, System.EventArgs e)
+        {
+            this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text);
         }
     }
 }

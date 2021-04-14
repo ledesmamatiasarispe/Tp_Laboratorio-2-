@@ -1,7 +1,7 @@
 ﻿
 namespace Trabajo_Practico_1
 {
-    partial class Form1
+    partial class LaCalculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -40,7 +40,7 @@ namespace Trabajo_Practico_1
             this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNumero1
             // 
             this.txtNumero1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumero1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -48,14 +48,13 @@ namespace Trabajo_Practico_1
             this.txtNumero1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNumero1.Location = new System.Drawing.Point(12, 49);
             this.txtNumero1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.txtNumero1.Name = "textBox1";
+            this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(100, 34);
             this.txtNumero1.TabIndex = 2;
             this.txtNumero1.Text = "1";
             this.txtNumero1.WordWrap = false;
-            this.txtNumero1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox3
+            // txtNumero2
             // 
             this.txtNumero2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumero2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -63,13 +62,13 @@ namespace Trabajo_Practico_1
             this.txtNumero2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNumero2.Location = new System.Drawing.Point(222, 49);
             this.txtNumero2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
-            this.txtNumero2.Name = "textBox3";
+            this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(100, 34);
             this.txtNumero2.TabIndex = 4;
             this.txtNumero2.Text = "0";
             this.txtNumero2.WordWrap = false;
             // 
-            // comboBox1
+            // cmbOperador
             // 
             this.cmbOperador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbOperador.DisplayMember = "0";
@@ -85,84 +84,83 @@ namespace Trabajo_Practico_1
             this.cmbOperador.Location = new System.Drawing.Point(122, 49);
             this.cmbOperador.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
             this.cmbOperador.MaxDropDownItems = 3;
-            this.cmbOperador.Name = "comboBox1";
+            this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbOperador.Size = new System.Drawing.Size(90, 33);
             this.cmbOperador.TabIndex = 3;
             this.cmbOperador.ValueMember = "0";
-            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
-            // button1
+            // btnOperar
             // 
             this.btnOperar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnOperar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnOperar.Location = new System.Drawing.Point(12, 91);
-            this.btnOperar.Name = "button1";
+            this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(100, 33);
             this.btnOperar.TabIndex = 5;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
-            this.btnOperar.Click += new System.EventHandler(this.button1_Click);
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_click);
             // 
-            // button2
+            // btnLimpiar
             // 
             this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLimpiar.Location = new System.Drawing.Point(118, 91);
-            this.btnLimpiar.Name = "button2";
+            this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(100, 33);
             this.btnLimpiar.TabIndex = 6;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.button2_Click);
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_click);
             // 
-            // button3
+            // btnCerrar
             // 
             this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnCerrar.Location = new System.Drawing.Point(223, 91);
-            this.btnCerrar.Name = "button3";
+            this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(100, 33);
             this.btnCerrar.TabIndex = 7;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.button3_Click);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_click);
             // 
-            // button4
+            // btnConvertirADecimal
             // 
             this.btnConvertirADecimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnConvertirADecimal.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnConvertirADecimal.Location = new System.Drawing.Point(168, 130);
-            this.btnConvertirADecimal.Name = "button4";
+            this.btnConvertirADecimal.Name = "btnConvertirADecimal";
             this.btnConvertirADecimal.Size = new System.Drawing.Size(155, 33);
             this.btnConvertirADecimal.TabIndex = 9;
             this.btnConvertirADecimal.Text = "Convertir A Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
-            this.btnConvertirADecimal.Click += new System.EventHandler(this.button5_Click);
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
-            // button5
+            // btnConvertirABinario
             // 
             this.btnConvertirABinario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnConvertirABinario.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnConvertirABinario.Location = new System.Drawing.Point(12, 130);
-            this.btnConvertirABinario.Name = "button5";
+            this.btnConvertirABinario.Name = "btnConvertirABinario";
             this.btnConvertirABinario.Size = new System.Drawing.Size(155, 33);
             this.btnConvertirABinario.TabIndex = 8;
             this.btnConvertirABinario.Text = "Convertir A Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
-            this.btnConvertirABinario.Click += new System.EventHandler(this.button4_Click);
+            this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_click);
             // 
-            // label1
+            // lblResultado
             // 
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblResultado.Location = new System.Drawing.Point(12, 6);
-            this.lblResultado.Name = "label1";
+            this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(310, 39);
             this.lblResultado.TabIndex = 10;
             this.lblResultado.Text = "label1";
-            this.lblResultado.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // MiCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +181,7 @@ namespace Trabajo_Practico_1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MiCalculadora";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Matias Arispe del curso 2°A ";
