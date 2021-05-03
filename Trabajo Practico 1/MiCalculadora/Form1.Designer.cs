@@ -160,7 +160,7 @@ namespace Trabajo_Practico_1
             this.lblResultado.TabIndex = 10;
             this.lblResultado.Text = "label1";
             // 
-            // MiCalculadora
+            // LaCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,11 +181,10 @@ namespace Trabajo_Practico_1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MiCalculadora";
+            this.Name = "LaCalculadora";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Matias Arispe del curso 2°A ";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
