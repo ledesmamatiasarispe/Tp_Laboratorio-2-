@@ -6,28 +6,40 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-  
+
 
     /// <summary>
     /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
     /// </summary>
     public abstract class Vehiculo
     {
-            
+
         EMarca marca;
         string chasis;
         ConsoleColor color;
 
+        public Vehiculo(string chasis, EMarca marca,  ConsoleColor color)
+        {
+            this.marca = marca;
+            this.chasis = chasis;
+            this.color = color;
+
+        }
+
+
+
+
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-         abstract ETamanio Tamanio { get; }
+         protected abstract ETamanio Tamanio { get; }
+
 
         /// <summary>
         /// Publica todos los datos del Vehiculo.
         /// </summary>
         /// <returns></returns>
-        public string Mostrar()
+        public virtual string Mostrar()
         {
             return (string)this;
         }
@@ -68,11 +80,11 @@ namespace Entidades
 
 
 
-        enum EMarca
+        public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
-        enum ETamanio
+        public enum ETamanio
         {
             Chico, Mediano, Grande
         }
